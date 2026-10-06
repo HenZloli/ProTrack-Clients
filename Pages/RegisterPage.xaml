@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="ProTrack.Maui.Pages.RegisterPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Đăng ký">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="16"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Tạo tài khoản"
+                FontSize="30"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="FullNameEntry"
+                Placeholder="Họ và tên" />
+
+            <Entry
+                x:Name="UsernameEntry"
+                Placeholder="Tên đăng nhập" />
+
+            <Entry
+                x:Name="EmailEntry"
+                Placeholder="Email"
+                Keyboard="Email" />
+
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Mật khẩu"
+                IsPassword="True" />
+
+            <Entry
+                x:Name="ConfirmPasswordEntry"
+                Placeholder="Nhập lại mật khẩu"
+                IsPassword="True" />
+
+            <Button
+                Text="Đăng ký"
+                Clicked="RegisterButton_Clicked"
+                HeightRequest="50" />
+
+            <ActivityIndicator
+                x:Name="LoadingIndicator"
+                IsVisible="False"
+                IsRunning="False" />
+
+            <Label
+                x:Name="StatusLabel"
+                HorizontalTextAlignment="Center" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

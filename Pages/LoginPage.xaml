@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="ProTrack.Maui.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Đăng nhập">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="18"
+            VerticalOptions="Center">
+
+            <Label
+                Text="ProTrack"
+                FontSize="40"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Production Tracking System"
+                HorizontalOptions="Center"
+                Opacity="0.6" />
+
+            <Entry
+                x:Name="UsernameEntry"
+                Placeholder="Tên đăng nhập"
+                Keyboard="Text" />
+
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Mật khẩu"
+                IsPassword="True" />
+
+            <Button
+                Text="Đăng nhập"
+                Clicked="LoginButton_Clicked"
+                HeightRequest="50" />
+
+            <Button
+                Text="Đăng ký tài khoản"
+                Clicked="RegisterButton_Clicked"
+                BackgroundColor="Transparent"
+                TextColor="Blue" />
+
+            <ActivityIndicator
+                x:Name="LoadingIndicator"
+                IsVisible="False"
+                IsRunning="False" />
+
+            <Label
+                x:Name="StatusLabel"
+                HorizontalTextAlignment="Center" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

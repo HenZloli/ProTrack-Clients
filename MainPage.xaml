@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="ProTrack.Maui.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ProTrack">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20"
+            VerticalOptions="Center">
+
+            <Label
+                Text="ProTrack"
+                FontSize="40"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Production Tracking System"
+                FontSize="16"
+                HorizontalOptions="Center"
+                Opacity="0.6" />
+
+            <Label
+                Text="Cấu hình máy chủ"
+                FontSize="26"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="0,30,0,10" />
+
+            <Entry
+                x:Name="ServerUrlEntry"
+                Placeholder="http://localhost:5081"
+                Keyboard="Url"
+                HeightRequest="50" />
+
+            <Button
+                x:Name="ConnectButton"
+                Text="Kết nối"
+                HeightRequest="50"
+                Clicked="ConnectButton_Clicked" />
+
+            <Label
+                x:Name="StatusLabel"
+                HorizontalTextAlignment="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
