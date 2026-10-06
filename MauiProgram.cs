@@ -18,13 +18,7 @@ public static class MauiProgram
 			});
 
 
-        builder.Services.AddSingleton<AuthService>(sp =>
-        {
-            return new AuthService(
-                Preferences.Default.Get(
-                    "ServerUrl",
-                    "http://localhost:5081"));
-        });
+        builder.Services.AddSingleton<AuthService>();
 
         builder.Services.AddTransient<LoginPage>();
         builder.Services.AddTransient<RegisterPage>();
