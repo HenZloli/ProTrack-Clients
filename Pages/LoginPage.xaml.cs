@@ -60,11 +60,11 @@ public partial class LoginPage : ContentPage
             }
 
             await DisplayAlert(
-                "Thành công",
-                $"Xin chào {result.FullName}!",
-                "OK");
+                    "Thành công",
+                    $"Xin chào {result.FullName}!",
+                    "OK");
 
-            await Shell.Current.GoToAsync("//MainPage");
+            await Shell.Current.GoToAsync("HomePage");
         }
         catch (Exception ex)
         {

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="ProTrack.Maui.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ProTrack">
+
+    <VerticalStackLayout
+        Padding="30"
+        Spacing="20"
+        VerticalOptions="Center">
+
+        <Label
+            Text="PROTRACK"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="WelcomeLabel"
+            Text="Xin chào!"
+            FontSize="20"
+            HorizontalOptions="Center" />
+
+        <Button
+            Text="Quản lý sản xuất" />
+
+        <Button
+            Text="Đăng xuất"
+            Clicked="LogoutButton_Clicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
